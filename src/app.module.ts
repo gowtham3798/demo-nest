@@ -20,6 +20,7 @@ const envFilePath: string = getEnvPath(`${__dirname}/common/envs`);
       { type: 'mysql',
       host: process.env.DATABASE_HOST,
       port: 25060,
+      database:process.env.DATABASE_DB,
       username: process.env.DATABASE_NAME,
       password: process.env.DATABASE_PASSWORD,
       entities: [Users,Students,Subjects,StudentSubject],
